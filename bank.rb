@@ -10,15 +10,15 @@ class Customer
 
     def deposit num
         @balance += num
-        puts "Your balance is #{@balance}"
+        puts "#{@name}'s balance is #{@balance}"
     end
 
     def withdraw num
         if @balance - num > 0
             @balance -= num
-            puts "Your Balance is #{@balance}"
+            puts "#{@name}'s Balance is #{@balance}"
         else
-            puts "You do not have the funds for this withdraw"
+            puts "#{@name} does not have the funds for this withdraw"
         end
     end
 end
